@@ -16,7 +16,7 @@ Run `Builds/Windows/NeonSiege.exe` when the build is present. Keep the executabl
 | Next weapon | Q / mouse wheel | RB |
 | Select weapon | 1–5 | Cycle with RB |
 | Pause | Escape | Menu |
-| Menus | Mouse | D-pad / A / B |
+| Menus | Mouse | D-pad / A |
 
 Dash grants brief invulnerability. Orange circles announce a boss strike: leave the circle before it detonates. Use cover against gunners and dodge their visible projectiles. Kills within four seconds build a score multiplier. Cyan supplies refill the magazine, pink supplies restore health, and orange supplies grant ten seconds of faster firing. Reloads have unlimited reserve ammunition.
 
@@ -26,8 +26,8 @@ Choose one of three augments between waves. Each cleared wave restores 15 health
 
 - Open this project directory in **Unity 6000.6.5f1**, with Windows Standalone support. Dependencies are pinned in `Packages/manifest.json` and `packages-lock.json`.
 - Open `Assets/_Project/Scenes/NeonSiege.unity` and press Play.
-- The scene bootstraps its arena, pools, player, UI, and audio. Gameplay data is stored in `Assets/_Project/Resources`.
-- `Neon Siege → Generate project` recreates the bootstrap scene and creates missing default data; it preserves existing tuning assets.
+- The scene contains the baked arena and navigation data; runtime bootstrap creates pools, player, UI, and audio. Gameplay data is stored in `Assets/_Project/Resources` so runtime loading works in the standalone build.
+- `Neon Siege → Rebuild baked arena` rebuilds the arena, navigation, light probes, and lightmaps. `Generate project` recreates only the bootstrap scene; rebuild the baked arena afterwards.
 - Build through Unity Build Profiles for Windows, or run:
 
 ```powershell
@@ -35,6 +35,8 @@ powershell -ExecutionPolicy Bypass -File Tools/unity.ps1 -Method NeonSiege.Edito
 ```
 
 The helper script currently points to the editor installed on this workstation. Adjust its editor path for another machine.
+
+Commit `.gitignore`, `Assets` and their `.meta` files, `Packages`, `ProjectSettings`, `Tools`, and `Docs`. Unity caches, local editor state, logs, and generated `Builds` are ignored. Distribute the entire `Builds/Windows` folder to players.
 
 ## Extend
 
@@ -50,5 +52,15 @@ The helper script currently points to the editor installed on this workstation. 
 Settings, input overrides, and high score live in `Application.persistentDataPath/profile.json` (normally `%USERPROFILE%\AppData\LocalLow\Siege Studio\NEON SIEGE`). Missing/corrupt profiles fall back to defaults. Saves are local only.
 
 Validation evidence and limitations are recorded in `Docs/VALIDATION.md`. `Docs/full-run-validation.txt` records an accelerated progression test; it does not certify difficulty or normal run duration. `Docs/asset-stats.json` records exported mesh triangle counts.
+
+Reproduce the editor progression check with `Tools/unity.ps1 -Method NeonSiege.Editor.RunValidation.FullRun -Log full-run.log -Play`. Launch the executable with `-siegeQA` for combat/input/save/asset checks, or `-siegePerf` for a 1080p, 24-enemy performance sample. These modes quit automatically and write reports beside the executable. Performance mode uses an invulnerable stationary operator and uncapped rendering; it is not a full-run benchmark.
+
+## Art and playtest TODOs
+
+- Refine the procedural rigid-weight character animation and weapon poses. Idle/run/reload use the custom rigs; death currently uses a particle burst and immediate pool return instead of the exported death clip.
+- Replace the synthesized sound palette and short music loop if a richer audio identity is desired.
+- Playtest normal 12-wave difficulty and the intended 10–15 minute duration. Automated progression checks do not establish whether the balance is fun.
+- Verify physical Xbox controller feel; automated input checks use a virtual gamepad.
+- Enemy meshes are under 1,400 triangles and capped at 24 concurrent actors; separate mesh LODs are not included.
 
 No third-party character, weapon or audio downloads were used. Unity's bundled Liberation Sans font retains its included license. Generated assets and code are supplied for this project; Unity/Blender retain their own software licenses.
