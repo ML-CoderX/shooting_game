@@ -1,0 +1,55 @@
+# Unity-generated caches and local editor state
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+/[Ss]ysinfo.txt
+
+# Generated players and packaging (rebuild from source)
+/[Bb]uild/
+/[Bb]uilds/
+*.apk
+*.aab
+*.unitypackage
+
+# IDE-generated files
+/.vs/
+/.idea/
+/.vscode/
+*.csproj
+*.sln
+*.slnx
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Logs, crash dumps and profiling captures
+*.log
+*.dmp
+*.stackdump
+*.traceevents
+*.raw
+/crash-report*
+
+# Blender backup files; keep .blend, .fbx, textures and source scripts
+*.blend1
+*.blend2
+*.blend@
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Keep Assets (including .meta), Packages, ProjectSettings, Tools and Docs.
+# Do not ignore all .meta files: Unity needs their GUIDs to preserve references.
