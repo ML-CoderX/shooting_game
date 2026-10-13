@@ -6,6 +6,8 @@ A Windows third-person arena shooter prototype built in Unity 6 / URP. Survive t
 
 Run `Builds/Windows/NeonSiege.exe` when the build is present. Keep the executable, `UnityPlayer.dll`, and `NeonSiege_Data` together.
 
+For distribution, run `Tools/package-player.ps1` and share `Builds/NeonSiege-Windows.zip`. Extract the complete archive before playing.
+
 | Action | Keyboard / mouse | Xbox controller |
 | --- | --- | --- |
 | Move / look | WASD / mouse | Left / right stick |
@@ -36,6 +38,8 @@ powershell -ExecutionPolicy Bypass -File Tools/unity.ps1 -Method NeonSiege.Edito
 
 The helper script currently points to the editor installed on this workstation. Adjust its editor path for another machine.
 
+The arena uses URP Forward rendering with a single mixed directional light. Additional lights, light cookies and terrain/vegetation shader variants are disabled. Re-enable the relevant pipeline settings and update `ArenaShaderStripping.cs` before adding those features.
+
 Commit `.gitignore`, `Assets` and their `.meta` files, `Packages`, `ProjectSettings`, `Tools`, and `Docs`. Unity caches, local editor state, logs, and generated `Builds` are ignored. Distribute the entire `Builds/Windows` folder to players.
 
 ## Extend
@@ -54,6 +58,8 @@ Settings, input overrides, and high score live in `Application.persistentDataPat
 Validation evidence and limitations are recorded in `Docs/VALIDATION.md`. `Docs/full-run-validation.txt` records an accelerated progression test; it does not certify difficulty or normal run duration. `Docs/asset-stats.json` records exported mesh triangle counts.
 
 Reproduce the editor progression check with `Tools/unity.ps1 -Method NeonSiege.Editor.RunValidation.FullRun -Log full-run.log -Play`. Launch the executable with `-siegeQA` for combat/input/save/asset checks, or `-siegePerf` for a 1080p, 24-enemy performance sample. These modes quit automatically and write reports beside the executable. Performance mode uses an invulnerable stationary operator and uncapped rendering; it is not a full-run benchmark.
+
+`Tools/verify-player.ps1 -Mode QA -Show` runs the visible standalone checks and copies their report into `Docs`. Use `-Mode Perf` for the benchmark. The final recorded sample averaged 391.8 FPS, with 299 peak draw calls and 86,018 triangles; see the validation record for test conditions and limits.
 
 ## Art and playtest TODOs
 

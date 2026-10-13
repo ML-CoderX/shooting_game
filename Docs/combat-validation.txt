@@ -1,0 +1,29 @@
+PASS Humanoid pose stays above floor (head 1.66m, foot 0.13m)
+PASS Spawn target for weapon 0
+PASS Weapon 0 damages target and consumes one round
+PASS Weapon 0 reload completes
+PASS Spawn target for weapon 1
+PASS Weapon 1 damages target and consumes one round
+PASS Weapon 1 reload completes
+PASS Spawn target for weapon 2
+PASS Weapon 2 damages target and consumes one round
+PASS Weapon 2 reload completes
+PASS Spawn target for weapon 3
+PASS Weapon 3 damages target and consumes one round
+PASS Weapon 3 reload completes
+PASS Spawn target for weapon 4
+PASS Weapon 4 damages target and consumes one round
+PASS Weapon 4 reload completes
+PASS Sniper pierces two enemies
+PASS Cover blocks hitscan damage
+PASS Simulated gamepad movement
+PASS Simulated gamepad dash
+PASS Rebinding survives a fresh input instance
+PASS JSON disk save/load round trip
+PASS Valid humanoid operator avatar
+PASS Audio mixer groups routed
+PASS Baked lighting and probes loaded
+PASS Gamepad submits main-menu Deploy button
+PASS Gamepad opens pause menu
+PASS Gamepad navigates to Settings
+INFO Ultrawide capture resolution: 1920x1080

@@ -23,7 +23,7 @@ namespace NeonSiege {
     for(int x=-1;x<=1;x+=2)for(int z=-1;z<=1;z+=2){var cover=art.Spawn(art.Cover,transform);cover.transform.localPosition=new Vector3(x*12,0,z*10);cover.transform.localScale=new Vector3(1.2f,1.14f,1.33f);var pillar=art.Spawn(art.Pillar,transform);pillar.transform.localPosition=new Vector3(x*21,0,z*19);for(int i=0;i<2;i++){var crate=art.Spawn(art.Crate,transform);crate.transform.localPosition=new Vector3(x*(23+i*1.6f),0,z*24);}}}
    Surface=gameObject.AddComponent<NavMeshSurface>();Surface.collectObjects=CollectObjects.Children;Surface.useGeometry=UnityEngine.AI.NavMeshCollectGeometry.PhysicsColliders;Surface.BuildNavMesh();
    var sun=new GameObject("Key light").AddComponent<Light>();sun.type=LightType.Directional;sun.intensity=2;sun.color=new Color(.67f,.79f,1);sun.shadows=LightShadows.Soft;sun.transform.rotation=Quaternion.Euler(48,-32,0);
-   RenderSettings.ambientLight=new Color(.2f,.27f,.35f);RenderSettings.fog=true;RenderSettings.fogColor=new Color(.025f,.04f,.075f);RenderSettings.fogDensity=.009f;
+   RenderSettings.ambientMode=UnityEngine.Rendering.AmbientMode.Flat;RenderSettings.ambientLight=new Color(.36f,.43f,.54f);RenderSettings.fog=true;RenderSettings.fogColor=new Color(.025f,.04f,.075f);RenderSettings.fogDensity=.009f;
   }
  }
 }
