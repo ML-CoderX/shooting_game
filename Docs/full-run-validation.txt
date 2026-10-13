@@ -1,0 +1,2 @@
+PASS waves=12, bosses=2, upgrades=11, kills=102
+Accelerated progression test; direct damage, not a balance/playability test.

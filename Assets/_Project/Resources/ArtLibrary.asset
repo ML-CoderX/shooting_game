@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aea905b069decf4099df848b279d9d9, type: 3}
+  m_Name: ArtLibrary
+  m_EditorClassIdentifier: NeonSiege.Runtime::NeonSiege.ArtLibrary
+  Operator: {fileID: 919132149155446097, guid: c5c9440fc66998c489a3303c12f52d1f, type: 3}
+  Enemies:
+  - {fileID: 919132149155446097, guid: e161e89d6a43d8645bd6146f7be7c1e2, type: 3}
+  - {fileID: 919132149155446097, guid: c750abef97b1f0146b78fa76dc623dcf, type: 3}
+  - {fileID: 919132149155446097, guid: 041066e4dce94c446b38cfad3c096fbd, type: 3}
+  - {fileID: 919132149155446097, guid: e161e89d6a43d8645bd6146f7be7c1e2, type: 3}
+  - {fileID: 919132149155446097, guid: 69552ef4254dc4147aa063b8dd666dad, type: 3}
+  Weapons:
+  - {fileID: 919132149155446097, guid: 9d8a1054f6566e14cb0e2429a33b1b4d, type: 3}
+  - {fileID: 919132149155446097, guid: b91feee940add134286cb6d8326e9c8a, type: 3}
+  - {fileID: 919132149155446097, guid: e81da86ed55be5e4ab7547b00fb36d66, type: 3}
+  - {fileID: 919132149155446097, guid: 5dcc25cead4096347bec9d78419aff6d, type: 3}
+  - {fileID: 919132149155446097, guid: ec93aac03ec3d3d4ca75666ef7233365, type: 3}
+  Cover: {fileID: 919132149155446097, guid: 8b26b27b68166c64ba158bd6cd691ca1, type: 3}
+  Pillar: {fileID: 919132149155446097, guid: eb38b5a0dc7b8ae4296b23e2c0a6e540, type: 3}
+  Crate: {fileID: 919132149155446097, guid: 7806958d01c5c29439db28d39be9eda8, type: 3}
+  Controllers:
+  - {fileID: 9100000, guid: 7eda89fbef18c5d4494a5133597368e4, type: 2}
+  - {fileID: 9100000, guid: 64c844d95dd25e648874347449e7f21a, type: 2}
+  - {fileID: 9100000, guid: ab2d45cd676ee13439c68b1f009ce1b2, type: 2}
+  - {fileID: 9100000, guid: 5607865c9428efe4ab0ccd9f6e5bc07e, type: 2}
+  - {fileID: 9100000, guid: 64c844d95dd25e648874347449e7f21a, type: 2}
+  - {fileID: 9100000, guid: 27fe008a1b4d8ee45ae8637818fd5da4, type: 2}
+  Armor: {fileID: 2100000, guid: 45c62ef9f6f018549b60cc4c940a09a6, type: 2}
+  PlayerGlow: {fileID: 2100000, guid: 6b6afbd2c7a075b4f8d0575db2f7bb1d, type: 2}
+  EnemyGlow: {fileID: 2100000, guid: cde21e96e849e5246a141f04c411bcd6, type: 2}

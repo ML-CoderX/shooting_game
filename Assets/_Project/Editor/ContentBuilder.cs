@@ -1,0 +1,15 @@
+using System.IO;
+using UnityEditor;
+using UnityEngine;
+namespace NeonSiege.Editor {
+ public static class ContentBuilder {
+  public static void Create(){if(!Directory.Exists("Assets/TextMesh Pro/Resources")){string[] paths=Directory.GetFiles("Library/PackageCache","TMP Essential Resources.unitypackage",SearchOption.AllDirectories);if(paths.Length>0)UnityEditor.AssetPackage.Package.Import(paths[0],false);}Upgrades();Enemies();Directory.CreateDirectory("Assets/_Project/Resources/Weapons");
+   Weapon(0,"VANGUARD",22,8,.65f,.4f,30,1,1.6f,false,false);Weapon(1,"BREACHER",15,1.4f,5,2,8,8,2.2f,false,false);Weapon(2,"LONGSHOT",125,1,0,3,5,1,2.6f,true,false);Weapon(3,"STINGER",12,14,1.3f,.22f,45,1,1.3f,false,false);Weapon(4,"AFTERSHOCK",95,1.5f,0,2,6,1,2.5f,false,true);AssetDatabase.SaveAssets();}
+  static void Upgrades(){Directory.CreateDirectory("Assets/_Project/Resources/Upgrades");string[] titles={"HOT LOAD","RAPID CYCLE","GHOST RUNNER","REINFORCED","PHASE DRIVE","DEEP RESERVES","VOLATILE","SIPHON","CHAIN REACTION"};string[] descriptions={"Deal 20% more weapon damage.","Fire 20% faster with every weapon.","Move 15% faster. Keep them chasing.","Gain 30 max health and restore 50 health.","Reduce dash cooldown by 20%.","Increase magazine capacity by 30%.","Rounds detonate for area damage.","Recover health with every hit.","Hits arc to a nearby enemy."};for(int i=0;i<9;i++){string path=$"Assets/_Project/Resources/Upgrades/{i}.asset";if(AssetDatabase.LoadAssetAtPath<UpgradeDefinition>(path))continue;var u=ScriptableObject.CreateInstance<UpgradeDefinition>();u.Kind=(UpgradeKind)i;u.Title=titles[i];u.Description=descriptions[i];u.Amount=i==2?.15f:.2f;AssetDatabase.CreateAsset(u,path);}}
+  static void Enemies(){Directory.CreateDirectory("Assets/_Project/Resources/Enemies");Directory.CreateDirectory("Assets/_Project/Resources/Waves");float[] hp={65,75,240,28,1700},speed={3.5f,2.6f,2,5,2.3f},scale={1,1,1.4f,.65f,2.3f};for(int i=0;i<5;i++){string path=$"Assets/_Project/Resources/Enemies/{i}.asset";if(AssetDatabase.LoadAssetAtPath<EnemyDefinition>(path))continue;var e=ScriptableObject.CreateInstance<EnemyDefinition>();e.Kind=(EnemyKind)i;e.Health=hp[i];e.Speed=speed[i];e.Scale=scale[i];e.Damage=i==4?20:10;e.Points=i==4?2500:i==2?300:100;e.AttackInterval=i==1?2:1.3f;AssetDatabase.CreateAsset(e,path);}if(!AssetDatabase.LoadAssetAtPath<WaveDefinition>("Assets/_Project/Resources/Waves/Run.asset"))AssetDatabase.CreateAsset(ScriptableObject.CreateInstance<WaveDefinition>(),"Assets/_Project/Resources/Waves/Run.asset");}
+  static void Weapon(int slot,string title,float damage,float rate,float spread,float recoil,int mag,int pellets,float reload,bool pierce,bool projectile){string path=$"Assets/_Project/Resources/Weapons/{slot}_{title}.asset";if(AssetDatabase.LoadAssetAtPath<WeaponDefinition>(path))return;var w=ScriptableObject.CreateInstance<WeaponDefinition>();w.Slot=slot;w.DisplayName=title;w.Damage=damage;w.FireRate=rate;w.Spread=spread;w.Recoil=recoil;w.Magazine=mag;w.Pellets=pellets;w.ReloadTime=reload;w.Pierce=pierce;w.Projectile=projectile;AssetDatabase.CreateAsset(w,path);}
+ }
+}
+
+
+

@@ -1,0 +1,1 @@
+{"name":"NeonSiege.Editor","rootNamespace":"NeonSiege.Editor","references":["NeonSiege.Runtime","Unity.InputSystem","Unity.AI.Navigation","Unity.RenderPipelines.Universal.Runtime","Unity.RenderPipelines.Core.Runtime","Unity.TextMeshPro"],"includePlatforms":["Editor"]}

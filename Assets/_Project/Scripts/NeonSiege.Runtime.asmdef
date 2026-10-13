@@ -1,0 +1,14 @@
+{
+  "name": "NeonSiege.Runtime",
+  "rootNamespace": "NeonSiege",
+  "references": [
+    "Unity.InputSystem",
+    "Unity.AI.Navigation",
+    "Unity.RenderPipelines.Universal.Runtime",
+    "Unity.RenderPipelines.Core.Runtime",
+    "Unity.TextMeshPro",
+    "Unity.ugui",
+    "Unity.Cinemachine"
+  ],
+  "autoReferenced": true
+}

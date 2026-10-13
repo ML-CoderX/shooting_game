@@ -1,0 +1,17 @@
+{
+  "Operator": 1188,
+  "Grunt": 1188,
+  "Gunner": 1232,
+  "Tank": 1276,
+  "Warden": 1364,
+  "Vanguard": 308,
+  "Breacher": 308,
+  "Longshot": 396,
+  "Stinger": 308,
+  "Aftershock": 352,
+  "Cover": 132,
+  "Pillar": 176,
+  "Crate": 132,
+  "FloorTile": 44,
+  "Wall": 88
+}
