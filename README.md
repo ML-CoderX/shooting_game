@@ -8,6 +8,8 @@ Run `Builds/Windows/NeonSiege.exe` when the build is present. Keep the executabl
 
 For distribution, run `Tools/package-player.ps1` and share `Builds/NeonSiege-Windows.zip`. Extract the complete archive before playing.
 
+Run `Tools/verify-package.ps1` to extract the ZIP into an ignored test folder, compare every packaged file with the build, check the x64 executable, and launch the extracted player for all 30 combat/input/save/restart checks. Its result is saved in `Docs/package-validation.txt`.
+
 | Action | Keyboard / mouse | Xbox controller |
 | --- | --- | --- |
 | Move / look | WASD / mouse | Left / right stick |
@@ -55,7 +57,7 @@ Commit `.gitignore`, `Assets` and their `.meta` files, `Packages`, `ProjectSetti
 
 Settings, input overrides, and high score live in `Application.persistentDataPath/profile.json` (normally `%USERPROFILE%\AppData\LocalLow\Siege Studio\NEON SIEGE`). Missing/corrupt profiles fall back to defaults. Saves are local only.
 
-Validation evidence and limitations are recorded in `Docs/VALIDATION.md`. `Docs/full-run-validation.txt` records an accelerated progression test; it does not certify difficulty or normal run duration. `Docs/asset-stats.json` records exported mesh triangle counts.
+Validation evidence and limitations are recorded in `Docs/VALIDATION.md`. `Docs/normal-run-validation.txt` records a normal-speed controller-driven victory: 12 waves, both bosses and 378 kills in 10:46 including upgrades, averaging 143.8 FPS at 1080p Medium on an RTX 3050 Laptop GPU. `Docs/full-run-validation.txt` is an older accelerated progression test. Neither automation test certifies human difficulty or subjective enjoyment. `Docs/asset-stats.json` records exported mesh triangle counts.
 
 Reproduce the editor progression check with `Tools/unity.ps1 -Method NeonSiege.Editor.RunValidation.FullRun -Log full-run.log -Play`. Launch the executable with `-siegeQA` for combat/input/save/asset checks, or `-siegePerf` for a 1080p, 24-enemy performance sample. These modes quit automatically and write reports beside the executable. Performance mode uses an invulnerable stationary operator and uncapped rendering; it is not a full-run benchmark.
 
@@ -67,7 +69,7 @@ Reproduce the editor progression check with `Tools/unity.ps1 -Method NeonSiege.E
 
 - Refine the procedural rigid-weight character animation and weapon poses. Idle/run/reload use the custom rigs; death currently uses a particle burst and immediate pool return instead of the exported death clip.
 - Replace the synthesized sound palette and short music loop if a richer audio identity is desired.
-- Playtest normal 12-wave difficulty and the intended 10–15 minute duration. Automated progression checks do not establish whether the balance is fun.
+- Human-playtest difficulty, weapon feel and replayability. The normal-speed automated run verifies completion and the 10–15 minute duration target; subjective fun remains a human acceptance check.
 - Verify physical Xbox controller feel; automated input checks use a virtual gamepad.
 - Enemy meshes are under 1,400 triangles and capped at 24 concurrent actors; separate mesh LODs are not included.
 

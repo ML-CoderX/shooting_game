@@ -26,4 +26,6 @@ PASS Baked lighting and probes loaded
 PASS Gamepad submits main-menu Deploy button
 PASS Gamepad opens pause menu
 PASS Gamepad navigates to Settings
+PASS Gamepad redeploys from defeat with a fresh run
+PASS Gamepad redeploys from victory with restored health
 INFO Ultrawide capture resolution: 1920x1080

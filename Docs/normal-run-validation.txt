@@ -1,20 +1,20 @@
-FAIL normal-speed run: Defeat
-Waves: 5
-Boss kills: 0
-Upgrades: 4
-Kills: 79
-Shots fired: 353
-Gameplay seconds: 151.7
-Wall seconds including upgrades: 162.8
-Within 10–15 minute target: False
-Minimum health: 6.4
+PASS normal-speed run: Victory
+Waves: 12
+Boss kills: 2
+Upgrades: 11
+Kills: 378
+Shots fired: 1966
+Gameplay seconds: 610.8
+Wall seconds including upgrades: 645.7
+Within 10–15 minute target: True
+Minimum health: 33.5
 God mode: False
 Runtime errors: 0
 Resolution: 1920x1080
-Sampled gameplay frames: 21416
+Sampled gameplay frames: 88643
 Average FPS: 143.8
-95th percentile ms: 6.97
+95th percentile ms: 6.98
 Frames over 16.67 ms: 2
-Peak draw calls: 194
-Peak triangles: 36364
+Peak draw calls: 259
+Peak triangles: 61578
 Automated controller with scene-state targeting; this verifies actual combat/progression, not human difficulty or subjective enjoyment.

@@ -1,0 +1,7 @@
+PASS packaged Windows player
+Archive files verified against build: 117
+PE machine: 0x8664 (Windows x86-64)
+Extracted executable launched and passed all 30 combat/input/save/restart checks.
+Archive SHA256: C942FAEB40F64D7EB18F5A1EBEE6ED03C5AB33E40C00FCF4FAB1555D7AB93190
+Archive bytes: 34481869
+The extracted test folder is retained under Builds/PackageCheck-* (ignored by Git).

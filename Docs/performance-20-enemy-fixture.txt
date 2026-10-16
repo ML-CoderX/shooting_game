@@ -1,0 +1,12 @@
+GPU: NVIDIA GeForce RTX 3050 6GB Laptop GPU
+Resolution: 1920x1080
+Quality: 1
+24 enemies including one wave-10 boss; stationary invulnerable operator; 5-second warmup, 35-second sample.
+Samples: 14405
+Average FPS: 411.6
+Median frame ms: 2.55
+95th percentile ms: 3.17
+Max draw calls: 281
+Max batches: 0
+Max triangles: 74420
+Counters of zero mean unavailable.

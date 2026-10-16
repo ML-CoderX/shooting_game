@@ -1,0 +1,110 @@
+Normal-speed controller playtest; original wave/weapon tuning; no invulnerability, direct damage, healing, or teleports. 1080p, 144 FPS cap.
+Wave 1 started; kills=0; HP=100.0
+Progress: wave=1, time=0.0s, remaining=15, HP=100.0, kills=0, shots=0
+Aim: player=(0.00, 0.08, 5.27), target=(-1.77, 0.08, 5.58), yaw=-24.9, pitch=2.3, path=PathComplete, steering=(0.00, 0.08, 18.00), stick=(0.00, 1.00)
+Aim: player=(7.01, 0.08, -8.25), target=(-0.27, 0.08, -8.03), yaw=0.4, pitch=0.2, path=PathComplete, steering=(0.00, 0.08, -18.00), stick=(-0.75, 0.66)
+Wave 1 cleared at 25.7s; HP 89.6; choose HOT LOAD
+Wave 2 started; kills=15; HP=100.0
+Progress: wave=2, time=27.4s, remaining=18, HP=100.0, kills=15, shots=52
+No visible target: player=(5.12, 0.08, -11.82), nearest=(13.96, 0.08, 19.87), path=PathComplete, steering=(0.00, 0.08, -18.00), stick=(0.91, -0.41)
+Wave 2 cleared at 51.7s; HP 100.0; choose CHAIN REACTION
+Wave 3 started; kills=33; HP=100.0
+No visible target: player=(-4.68, 0.08, -9.09), nearest=(0.00, 0.00, 0.00), path=PathComplete, steering=(-18.00, 0.08, 0.00), stick=(-0.67, -0.74)
+Progress: wave=3, time=54.6s, remaining=21, HP=100.0, kills=33, shots=118
+Aim: player=(-7.50, 0.08, 8.96), target=(19.49, 0.08, 16.12), yaw=-6.2, pitch=0.0, path=PathComplete, steering=(0.00, 0.08, 18.00), stick=(-0.66, 0.75)
+Aim: player=(15.31, 0.08, -0.16), target=(21.79, 0.08, 3.68), yaw=-117.9, pitch=-0.2, path=PathComplete, steering=(8.00, 0.08, -8.33), stick=(0.43, 0.90)
+Progress: wave=3, time=84.1s, remaining=4, HP=88.8, kills=50, shots=193
+Wave 3 cleared at 85.6s; HP 88.8; choose HOT LOAD
+Wave 4 started; kills=54; HP=100.0
+Aim: player=(15.66, 0.08, 0.16), target=(26.77, 0.08, 2.44), yaw=152.8, pitch=0.0, path=PathComplete, steering=(8.00, 0.08, -8.33), stick=(-0.88, 0.47)
+Aim: player=(-11.90, 0.08, -4.94), target=(-9.39, 0.08, -7.85), yaw=25.2, pitch=-0.4, path=PathComplete, steering=(-18.00, 0.08, 0.00), stick=(-0.65, -0.76)
+Progress: wave=4, time=111.5s, remaining=15, HP=100.0, kills=63, shots=268
+Aim: player=(6.15, 0.08, 10.08), target=(5.23, 0.08, 4.80), yaw=0.5, pitch=0.1, path=PathComplete, steering=(8.33, 0.08, 8.00), stick=(-0.73, 0.69)
+Wave 4 cleared at 133.9s; HP 88.4; choose SIPHON
+Wave 5 started; kills=78; HP=100.0
+No visible target: player=(6.88, 0.08, 9.49), nearest=(0.00, 0.00, 0.00), path=PathComplete, steering=(8.00, 0.08, 8.33), stick=(-0.54, 0.84)
+Progress: wave=5, time=138.9s, remaining=27, HP=100.0, kills=78, shots=368
+Aim: player=(1.30, 0.08, -16.50), target=(7.90, 0.08, -9.96), yaw=-0.1, pitch=0.1, path=PathComplete, steering=(0.00, 0.08, -18.00), stick=(0.02, -1.00)
+Aim: player=(-8.02, 0.08, 8.32), target=(-5.91, 0.08, 4.74), yaw=0.8, pitch=0.0, path=PathComplete, steering=(-8.00, 0.08, 8.33), stick=(-1.00, -0.08)
+Progress: wave=5, time=168.6s, remaining=17, HP=100.0, kills=88, shots=447
+Aim: player=(15.81, 0.08, -0.70), target=(7.21, 0.08, -0.66), yaw=0.5, pitch=0.5, path=PathComplete, steering=(8.33, 0.08, -8.00), stick=(-0.63, 0.77)
+Wave 5 cleared at 192.2s; HP 100.0; choose RAPID CYCLE
+Wave 6 started; kills=105; HP=100.0
+No visible target: player=(6.85, 0.08, 4.11), nearest=(0.00, 0.00, 0.00), path=PathComplete, steering=(18.00, 0.08, 0.00), stick=(-0.69, -0.73)
+Progress: wave=6, time=195.9s, remaining=29, HP=100.0, kills=106, shots=560
+Aim: player=(-1.21, 0.08, -14.56), target=(15.86, 0.08, -21.85), yaw=-158.2, pitch=0.0, path=PathComplete, steering=(-8.33, 0.08, -8.00), stick=(0.60, 0.80)
+Aim: player=(-8.01, 0.08, 8.32), target=(14.51, 0.08, 7.88), yaw=0.1, pitch=0.4, path=PathComplete, steering=(-8.00, 0.08, 8.33), stick=(-0.71, 0.71)
+Progress: wave=6, time=225.3s, remaining=9, HP=100.0, kills=126, shots=663
+Aim: player=(12.00, 0.08, -4.28), target=(8.44, 0.08, -7.88), yaw=-0.1, pitch=0.1, path=PathComplete, steering=(8.00, 0.08, -8.33), stick=(0.10, 1.00)
+Wave 6 cleared at 242.0s; HP 100.0; choose RAPID CYCLE
+Wave 7 started; kills=135; HP=100.0
+Aim: player=(13.23, 0.08, -3.11), target=(-14.06, 0.08, -5.23), yaw=0.2, pitch=0.0, path=PathComplete, steering=(8.33, 0.08, -8.00), stick=(-0.63, 0.78)
+Progress: wave=7, time=252.7s, remaining=30, HP=100.0, kills=138, shots=745
+Aim: player=(-9.90, 0.08, -6.74), target=(0.50, 0.08, -1.66), yaw=0.3, pitch=0.0, path=PathComplete, steering=(-18.00, 0.08, 0.00), stick=(-0.94, -0.34)
+Aim: player=(4.12, 0.08, 11.73), target=(0.59, 0.08, 15.38), yaw=-23.0, pitch=-0.1, path=PathComplete, steering=(8.33, 0.08, 8.00), stick=(0.57, -0.82)
+Progress: wave=7, time=282.3s, remaining=14, HP=96.9, kills=154, shots=846
+Aim: player=(-1.07, 0.08, -12.14), target=(4.16, 0.08, -5.48), yaw=0.5, pitch=0.0, path=PathComplete, steering=(-18.00, 0.08, 0.00), stick=(-1.00, 0.07)
+Wave 7 cleared at 297.1s; HP 100.0; choose VOLATILE
+Wave 8 started; kills=168; HP=100.0
+Aim: player=(-1.52, 0.08, -14.05), target=(2.05, 0.08, -25.73), yaw=52.8, pitch=0.0, path=PathComplete, steering=(-8.33, 0.08, -8.00), stick=(-0.53, -0.85)
+Progress: wave=8, time=309.5s, remaining=29, HP=100.0, kills=175, shots=954
+No visible target: player=(-7.94, 0.08, 8.41), nearest=(19.24, 0.08, 11.31), path=PathComplete, steering=(0.00, 0.08, 18.00), stick=(-1.00, -0.06)
+Aim: player=(14.19, 0.08, 3.13), target=(9.30, 0.08, 7.19), yaw=29.6, pitch=-0.1, path=PathComplete, steering=(18.00, 0.08, 0.00), stick=(-0.72, -0.69)
+Progress: wave=8, time=339.1s, remaining=14, HP=90.8, kills=190, shots=1050
+Aim: player=(1.47, 0.08, -9.87), target=(-2.17, 0.08, 2.30), yaw=0.2, pitch=0.2, path=PathComplete, steering=(0.00, 0.08, -18.00), stick=(-0.51, -0.86)
+Wave 8 cleared at 352.3s; HP 100.0; choose RAPID CYCLE
+Wave 9 started; kills=204; HP=100.0
+Aim: player=(12.47, 0.08, -3.38), target=(-24.16, 0.08, -7.01), yaw=-146.9, pitch=0.0, path=PathComplete, steering=(8.00, 0.08, -8.33), stick=(0.20, -0.98)
+Progress: wave=9, time=366.3s, remaining=31, HP=100.0, kills=212, shots=1159
+Aim: player=(-10.06, 0.08, -6.60), target=(-7.18, 0.08, -0.68), yaw=0.5, pitch=0.0, path=PathComplete, steering=(-18.00, 0.08, 0.00), stick=(-0.93, 0.38)
+Aim: player=(4.54, 0.08, 11.43), target=(7.71, 0.08, 8.18), yaw=-55.1, pitch=0.1, path=PathComplete, steering=(8.33, 0.08, 8.00), stick=(-0.98, 0.18)
+Progress: wave=9, time=395.8s, remaining=13, HP=100.0, kills=230, shots=1240
+Aim: player=(2.56, 0.08, -14.86), target=(6.89, 0.08, -8.08), yaw=0.2, pitch=0.0, path=PathComplete, steering=(0.00, 0.08, -18.00), stick=(-0.19, -0.98)
+Wave 9 cleared at 408.6s; HP 100.0; choose RAPID CYCLE
+Wave 10 started; kills=243; HP=100.0
+Aim: player=(-7.17, 0.08, -9.05), target=(14.15, 0.08, -8.00), yaw=23.1, pitch=0.0, path=PathComplete, steering=(-8.33, 0.08, -8.00), stick=(-0.96, -0.30)
+Progress: wave=10, time=423.1s, remaining=39, HP=96.8, kills=246, shots=1362
+Aim: player=(1.16, 0.08, 14.09), target=(-0.49, 0.08, 8.17), yaw=-3.6, pitch=0.0, path=PathComplete, steering=(8.33, 0.08, 8.00), stick=(-0.90, 0.43)
+Aim: player=(5.43, 0.08, -11.54), target=(2.44, 0.08, -14.33), yaw=-34.7, pitch=0.1, path=PathComplete, steering=(0.00, 0.08, -18.00), stick=(-0.82, 0.57)
+Progress: wave=10, time=452.6s, remaining=21, HP=100.0, kills=264, shots=1458
+Aim: player=(-10.38, 0.08, 5.90), target=(-5.88, 0.08, 9.29), yaw=-29.9, pitch=0.1, path=PathComplete, steering=(-8.00, 0.08, 8.33), stick=(-0.73, 0.69)
+Wave 10 cleared at 473.7s; HP 100.0; choose HOT LOAD
+Wave 11 started; kills=285; HP=100.0
+Aim: player=(-6.56, 0.08, 10.04), target=(11.17, 0.08, -23.86), yaw=28.3, pitch=0.0, path=PathComplete, steering=(0.00, 0.08, 18.00), stick=(-0.99, 0.14)
+Progress: wave=11, time=479.8s, remaining=43, HP=100.0, kills=287, shots=1548
+Aim: player=(13.37, 0.08, -2.58), target=(-13.90, 0.08, -15.59), yaw=0.1, pitch=0.0, path=PathComplete, steering=(8.00, 0.08, -8.33), stick=(-0.34, 0.94)
+Aim: player=(-6.54, 0.08, -9.59), target=(-16.60, 0.08, 7.98), yaw=0.2, pitch=0.0, path=PathComplete, steering=(-8.33, 0.08, -8.00), stick=(-0.29, 0.96)
+Progress: wave=11, time=509.2s, remaining=21, HP=100.0, kills=309, shots=1662
+Aim: player=(-4.09, 0.08, 13.01), target=(-10.73, 0.08, 19.99), yaw=-0.4, pitch=0.0, path=PathComplete, steering=(0.00, 0.08, 18.00), stick=(0.99, 0.11)
+Aim: player=(5.65, 0.08, -10.82), target=(7.71, 0.08, -11.10), yaw=18.0, pitch=34.4, path=PathComplete, steering=(0.00, 0.08, -18.00), stick=(-0.93, -0.37)
+Progress: wave=11, time=538.6s, remaining=2, HP=85.6, kills=328, shots=1761
+Wave 11 cleared at 540.0s; HP 97.7; choose GHOST RUNNER
+Wave 12 started; kills=330; HP=100.0
+Aim: player=(-16.75, 0.08, -0.40), target=(14.96, 0.08, 13.89), yaw=-57.5, pitch=-0.1, path=PathComplete, steering=(-8.33, 0.08, 8.00), stick=(-0.99, 0.16)
+Aim: player=(11.92, 0.08, -3.58), target=(5.14, 0.08, -4.28), yaw=-146.2, pitch=1.9, path=PathComplete, steering=(0.00, 0.08, -18.00), stick=(0.40, -0.91)
+Progress: wave=12, time=566.2s, remaining=39, HP=100.0, kills=339, shots=1830
+Aim: player=(-3.60, 0.08, 13.69), target=(3.92, 0.08, 11.97), yaw=0.3, pitch=0.0, path=PathComplete, steering=(0.00, 0.08, 18.00), stick=(-0.83, 0.55)
+Aim: player=(1.49, 0.08, -16.15), target=(14.14, 0.08, -12.19), yaw=0.0, pitch=0.2, path=PathComplete, steering=(0.00, 0.08, -18.00), stick=(0.54, -0.84)
+Progress: wave=12, time=595.6s, remaining=19, HP=100.0, kills=359, shots=1914
+Aim: player=(7.28, 0.08, 8.99), target=(0.28, 0.08, 13.05), yaw=26.2, pitch=-0.1, path=PathComplete, steering=(8.33, 0.08, 8.00), stick=(-0.77, -0.64)
+PASS normal-speed run: Victory
+Waves: 12
+Boss kills: 2
+Upgrades: 11
+Kills: 378
+Shots fired: 1966
+Gameplay seconds: 610.8
+Wall seconds including upgrades: 645.7
+Within 10–15 minute target: True
+Minimum health: 33.5
+God mode: False
+Runtime errors: 0
+Resolution: 1920x1080
+Sampled gameplay frames: 88643
+Average FPS: 143.8
+95th percentile ms: 6.98
+Frames over 16.67 ms: 2
+Peak draw calls: 259
+Peak triangles: 61578
+Automated controller with scene-state targeting; this verifies actual combat/progression, not human difficulty or subjective enjoyment.
+
