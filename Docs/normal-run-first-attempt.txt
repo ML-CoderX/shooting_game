@@ -1,0 +1,13 @@
+Normal-speed controller playtest; original wave/weapon tuning; no invulnerability, direct damage, healing, or teleports. 1080p, 144 FPS cap.
+Wave 1 started; kills=0; HP=100.0
+Progress: wave=1, time=0.0s, remaining=15, HP=100.0, kills=0, shots=0
+Progress: wave=1, time=29.6s, remaining=1, HP=79.2, kills=14, shots=50
+Progress: wave=1, time=59.6s, remaining=1, HP=79.2, kills=14, shots=55
+Progress: wave=1, time=89.6s, remaining=1, HP=79.2, kills=14, shots=55
+Progress: wave=1, time=119.6s, remaining=1, HP=79.2, kills=14, shots=55
+Progress: wave=1, time=149.6s, remaining=1, HP=79.2, kills=14, shots=55
+Progress: wave=1, time=179.6s, remaining=1, HP=79.2, kills=14, shots=55
+Progress: wave=1, time=209.6s, remaining=1, HP=79.2, kills=14, shots=55
+Progress: wave=1, time=239.6s, remaining=1, HP=79.2, kills=14, shots=55
+Progress: wave=1, time=269.6s, remaining=1, HP=79.2, kills=14, shots=55
+Progress: wave=1, time=299.6s, remaining=1, HP=79.2, kills=14, shots=55

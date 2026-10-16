@@ -1,0 +1,80 @@
+PASS ground navmesh excluded from Pillar (21.00, 0.10, 19.00)
+PASS ground navmesh excluded from Cover (-12.00, 0.10, -10.00)
+PASS ground navmesh excluded from Cover (12.00, 0.10, -10.00)
+PASS ground navmesh excluded from Pillar (-21.00, 0.10, 19.00)
+PASS ground navmesh excluded from Cover (-12.00, 0.10, 10.00)
+PASS ground navmesh excluded from Pillar (-21.00, 0.10, -19.00)
+PASS ground navmesh excluded from Pillar (21.00, 0.10, -19.00)
+PASS ground navmesh excluded from Cover (12.00, 0.10, 10.00)
+PASS perimeter route 0
+PASS perimeter route 1
+PASS perimeter route 2
+PASS perimeter route 3
+PASS perimeter route 4
+PASS perimeter route 5
+PASS perimeter route 6
+PASS perimeter route 7
+PASS perimeter route 8
+PASS perimeter route 9
+PASS perimeter route 10
+PASS perimeter route 11
+PASS perimeter route 12
+PASS perimeter route 13
+PASS perimeter route 14
+PASS perimeter route 15
+PASS perimeter route 16
+PASS perimeter route 17
+PASS perimeter route 18
+PASS perimeter route 19
+PASS perimeter route 20
+PASS perimeter route 21
+PASS perimeter route 22
+PASS perimeter route 23
+PASS perimeter route 24
+PASS perimeter route 25
+PASS perimeter route 26
+PASS perimeter route 27
+PASS perimeter route 28
+PASS perimeter route 29
+PASS perimeter route 30
+PASS perimeter route 31
+PASS perimeter route 32
+PASS perimeter route 33
+PASS perimeter route 34
+PASS perimeter route 35
+PASS perimeter route 36
+PASS perimeter route 37
+PASS perimeter route 38
+PASS perimeter route 39
+PASS perimeter route 40
+PASS perimeter route 41
+PASS perimeter route 42
+PASS perimeter route 43
+PASS perimeter route 44
+PASS perimeter route 45
+PASS perimeter route 46
+PASS perimeter route 47
+PASS perimeter route 48
+PASS perimeter route 49
+PASS perimeter route 50
+PASS perimeter route 51
+PASS perimeter route 52
+PASS perimeter route 53
+PASS perimeter route 54
+PASS perimeter route 55
+PASS perimeter route 56
+PASS perimeter route 57
+PASS perimeter route 58
+PASS perimeter route 59
+PASS perimeter route 60
+PASS perimeter route 61
+PASS perimeter route 62
+PASS perimeter route 63
+PASS perimeter route 64
+PASS perimeter route 65
+PASS perimeter route 66
+PASS perimeter route 67
+PASS perimeter route 68
+PASS perimeter route 69
+PASS perimeter route 70
+PASS perimeter route 71

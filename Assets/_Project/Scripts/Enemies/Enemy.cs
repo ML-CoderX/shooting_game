@@ -18,7 +18,7 @@ namespace NeonSiege {
     Agent.SetDestination(target);}
    if(IsBoss){Agent.speed=Definition.Speed*(Health<MaxHealth*.35f?1.5f:1);if(attack<=0){attack=Health<MaxHealth*.5f?3:4.5f;strike=player.transform.position;telegraph=1.35f;Agent.isStopped=true;for(int i=0;i<49;i++){float a=i*Mathf.PI*2/48;warning.SetPosition(i,strike+new Vector3(Mathf.Cos(a)*4,.08f,Mathf.Sin(a)*4));}warning.enabled=true;}return;}
    if(Definition.Kind==EnemyKind.Gunner&&distance<22&&attack<=0){var origin=transform.position+Vector3.up*1.4f;var aim=player.transform.position+Vector3.up;if(!Physics.Linecast(origin,aim,1)){attack=Definition.AttackInterval;projectiles.Fire(origin,(aim-origin).normalized,Definition.Damage*(1+wave*.04f));}}
-   else if(Definition.Kind!=EnemyKind.Gunner&&distance<1.8f*Definition.Scale&&attack<=0){attack=Definition.AttackInterval;player.Damage(Definition.Damage*(1+wave*.04f));effects.Burst(player.transform.position+Vector3.up,4);}
+   else if(Definition.Kind!=EnemyKind.Gunner&&distance<1.8f*Definition.Scale&&attack<=0&&!Physics.Linecast(transform.position+Vector3.up,player.transform.position+Vector3.up,1,QueryTriggerInteraction.Ignore)){attack=Definition.AttackInterval;player.Damage(Definition.Damage*(1+wave*.04f));effects.Burst(player.transform.position+Vector3.up,4);}
   }
   public override bool TakeDamage(float amount){if(Health<=0)return false;float armor=Definition.Kind==EnemyKind.Tank?.7f:1;Health-=amount*armor;if(Health>0)return false;Health=0;effects.Burst(transform.position+Vector3.up,IsBoss?50:12);director.Killed(this);Despawn();return true;}
   public void Despawn(){warning.enabled=false;if(Agent.enabled){if(Agent.isOnNavMesh)Agent.ResetPath();Agent.enabled=false;}gameObject.SetActive(false);}

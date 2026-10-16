@@ -1,0 +1,30 @@
+PASS 16x9-menu: canvas 1920x1080
+PASS 16x9-menu: interactive controls stay inside viewport
+PASS 16x9-settings: canvas 1920x1080
+PASS 16x9-settings: interactive controls stay inside viewport
+PASS 16x9-bindings: canvas 1920x1080
+PASS 16x9-bindings: interactive controls stay inside viewport
+PASS 16x9-hud: canvas 1920x1080
+PASS 16x9-hud: interactive controls stay inside viewport
+PASS 16x9-hud: crosshair centered
+PASS 16x9-upgrades: canvas 1920x1080
+PASS 16x9-upgrades: interactive controls stay inside viewport
+PASS 16x9-pause: canvas 1920x1080
+PASS 16x9-pause: interactive controls stay inside viewport
+PASS 16x9-victory: canvas 1920x1080
+PASS 16x9-victory: interactive controls stay inside viewport
+PASS 21x9-menu: canvas 2560x1080
+PASS 21x9-menu: interactive controls stay inside viewport
+PASS 21x9-settings: canvas 2560x1080
+PASS 21x9-settings: interactive controls stay inside viewport
+PASS 21x9-bindings: canvas 2560x1080
+PASS 21x9-bindings: interactive controls stay inside viewport
+PASS 21x9-hud: canvas 2560x1080
+PASS 21x9-hud: interactive controls stay inside viewport
+PASS 21x9-hud: crosshair centered
+PASS 21x9-upgrades: canvas 2560x1080
+PASS 21x9-upgrades: interactive controls stay inside viewport
+PASS 21x9-pause: canvas 2560x1080
+PASS 21x9-pause: interactive controls stay inside viewport
+PASS 21x9-victory: canvas 2560x1080
+PASS 21x9-victory: interactive controls stay inside viewport

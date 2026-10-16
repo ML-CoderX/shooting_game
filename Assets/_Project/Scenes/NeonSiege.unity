@@ -1301,6 +1301,7 @@ GameObject:
   - component: {fileID: 175774543}
   - component: {fileID: 175774542}
   - component: {fileID: 175774541}
+  - component: {fileID: 175774544}
   m_Layer: 0
   m_Name: Cover
   m_TagString: Untagged
@@ -1401,6 +1402,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175774539}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &175774544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175774539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 1.1666666, y: 1.8333333, z: 1.5}
+  m_Center: {x: 0, y: -0.41666666, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffffi
 --- !u!1 &188561020
 GameObject:
   m_ObjectHideFlags: 0
@@ -1998,6 +2016,7 @@ GameObject:
   - component: {fileID: 310673212}
   - component: {fileID: 310673211}
   - component: {fileID: 310673210}
+  - component: {fileID: 310673213}
   m_Layer: 0
   m_Name: Pillar
   m_TagString: Untagged
@@ -2098,6 +2117,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 310673208}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &310673213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310673208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 1.3333334, y: 1.3333334, z: 1.3333334}
+  m_Center: {x: 0, y: -0.16666667, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffffi
 --- !u!1 &419559435
 GameObject:
   m_ObjectHideFlags: 0
@@ -4313,6 +4349,7 @@ GameObject:
   - component: {fileID: 812777354}
   - component: {fileID: 812777353}
   - component: {fileID: 812777352}
+  - component: {fileID: 812777355}
   m_Layer: 0
   m_Name: Cover
   m_TagString: Untagged
@@ -4413,6 +4450,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812777350}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &812777355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812777350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 1.1666666, y: 1.8333333, z: 1.5}
+  m_Center: {x: 0, y: -0.41666666, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffffi
 --- !u!1 &816352017
 GameObject:
   m_ObjectHideFlags: 0
@@ -5255,6 +5309,7 @@ GameObject:
   - component: {fileID: 1124212319}
   - component: {fileID: 1124212318}
   - component: {fileID: 1124212317}
+  - component: {fileID: 1124212320}
   m_Layer: 0
   m_Name: Pillar
   m_TagString: Untagged
@@ -5355,6 +5410,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124212315}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1124212320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124212315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 1.3333334, y: 1.3333334, z: 1.3333334}
+  m_Center: {x: 0, y: -0.16666667, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffffi
 --- !u!1 &1131127065
 GameObject:
   m_ObjectHideFlags: 0
@@ -6669,6 +6741,7 @@ GameObject:
   - component: {fileID: 1317484278}
   - component: {fileID: 1317484277}
   - component: {fileID: 1317484276}
+  - component: {fileID: 1317484279}
   m_Layer: 0
   m_Name: Cover
   m_TagString: Untagged
@@ -6769,6 +6842,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317484274}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1317484279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317484274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 1.1666666, y: 1.8333333, z: 1.5}
+  m_Center: {x: 0, y: -0.41666666, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffffi
 --- !u!1 &1325176329
 GameObject:
   m_ObjectHideFlags: 0
@@ -7610,6 +7700,7 @@ GameObject:
   - component: {fileID: 1458032130}
   - component: {fileID: 1458032129}
   - component: {fileID: 1458032128}
+  - component: {fileID: 1458032131}
   m_Layer: 0
   m_Name: Cover
   m_TagString: Untagged
@@ -7710,6 +7801,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458032126}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1458032131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458032126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 1.1666666, y: 1.8333333, z: 1.5}
+  m_Center: {x: 0, y: -0.41666666, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffffi
 --- !u!1 &1460125343
 GameObject:
   m_ObjectHideFlags: 0
@@ -8217,6 +8325,7 @@ GameObject:
   - component: {fileID: 1563491532}
   - component: {fileID: 1563491531}
   - component: {fileID: 1563491530}
+  - component: {fileID: 1563491533}
   m_Layer: 0
   m_Name: Pillar
   m_TagString: Untagged
@@ -8317,6 +8426,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563491528}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1563491533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563491528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 1.3333334, y: 1.3333334, z: 1.3333334}
+  m_Center: {x: 0, y: -0.16666667, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffffi
 --- !u!1 &1582483216
 GameObject:
   m_ObjectHideFlags: 0
@@ -9745,6 +9871,7 @@ GameObject:
   - component: {fileID: 1951675556}
   - component: {fileID: 1951675555}
   - component: {fileID: 1951675554}
+  - component: {fileID: 1951675557}
   m_Layer: 0
   m_Name: Pillar
   m_TagString: Untagged
@@ -9845,6 +9972,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1951675552}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1951675557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951675552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 1.3333334, y: 1.3333334, z: 1.3333334}
+  m_Center: {x: 0, y: -0.16666667, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffffi
 --- !u!1 &1982448741
 GameObject:
   m_ObjectHideFlags: 0

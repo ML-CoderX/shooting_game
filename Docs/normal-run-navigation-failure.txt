@@ -1,0 +1,28 @@
+Normal-speed controller playtest; original wave/weapon tuning; no invulnerability, direct damage, healing, or teleports. 1080p, 144 FPS cap.
+Wave 1 started; kills=0; HP=100.0
+Progress: wave=1, time=0.0s, remaining=15, HP=100.0, kills=0, shots=0
+Aim: player=(0.00, 0.08, 5.27), target=(0.39, 0.08, 3.52), yaw=-2.1, pitch=15.6, path=PathComplete, steering=(0.00, 0.08, 18.00), stick=(0.00, 1.00)
+Aim: player=(1.93, 0.08, 14.20), target=(-0.69, 0.08, 7.34), yaw=0.4, pitch=0.0, path=PathComplete, steering=(18.00, 0.08, 0.00), stick=(-0.88, 0.47)
+Progress: wave=1, time=29.6s, remaining=1, HP=68.8, kills=14, shots=51
+No visible target: player=(15.63, 0.08, 8.80), nearest=(20.17, 0.08, 18.23), path=PathPartial, steering=(15.67, 0.08, 8.83), stick=(0.41, -0.91)
+FAIL normal-speed run: Defeat
+Waves: 1
+Boss kills: 0
+Upgrades: 0
+Kills: 14
+Shots fired: 51
+Gameplay seconds: 53.9
+Wall seconds including upgrades: 54.3
+Within 10–15 minute target: False
+Minimum health: 0.0
+God mode: False
+Runtime errors: 0
+Resolution: 1920x1080
+Sampled gameplay frames: 7092
+Average FPS: 143.8
+95th percentile ms: 6.99
+Frames over 16.67 ms: 1
+Peak draw calls: 194
+Peak triangles: 31864
+Automated controller with scene-state targeting; this verifies actual combat/progression, not human difficulty or subjective enjoyment.
+

@@ -40,6 +40,9 @@
 *.traceevents
 *.raw
 /crash-report*
+# Unity Performance Testing package writes host/run metadata during builds.
+/Assets/Resources/PerformanceTestRunInfo.json*
+/Assets/Resources/PerformanceTestRunSettings.json*
 
 # Blender backup files; keep .blend, .fbx, textures and source scripts
 *.blend1

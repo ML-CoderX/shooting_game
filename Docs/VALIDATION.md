@@ -27,6 +27,8 @@ This file records actual checks, not assumed completion.
 - GPU light bake completed successfully with saved lightmaps, shadowmask, 50 light probes, and navigation data.
 - Windows x86-64 / DirectX 11 / Mono build succeeded. Project C# compilation has no errors or warnings.
 - 28 standalone checks passed: five weapons and reloads, sniper piercing, cover blocking, virtual-gamepad movement/dash/menu navigation, persistent bindings, disk JSON save/load, humanoid rig/pose, mixer routing, and baked lighting. See `combat-validation.txt`.
+- The normal-speed run exposed ground navigation beneath solid pillars/cover. Explicit unwalkable volumes now exclude all eight footprints; spawn clearance and path-connectivity checks prevent invalid spawn positions, and melee requires line of sight. The saved navigation mesh was rebuilt without changing baked lighting. All valid perimeter routes and eight obstacle exclusions passed `navigation-validation.txt`; standalone combat checks passed again afterwards.
+- 30 layout assertions passed at actual 1920×1080 and 2560×1080 render-target sizes: seven screens per size, all active controls inside the viewport, and a centered HUD crosshair. Screenshots are in `Screenshots/layout-*`. The fixture uses a camera-space canvas to render beyond this desktop's native window-size limit; it does not certify an attached ultrawide monitor. A fixture near-plane clipping issue was corrected before the final captures.
 - Final standalone QA and performance logs contained no runtime errors, warnings, or unsupported-shader messages. Unity's editor package import can emit an optional Cinemachine HDRP sample assembly-reference message; HDRP is not installed or used.
 - URP Forward rendering, one Medium shadow cascade, two High cascades, non-shadow-casting neon details/projectiles, static arena batching, and pooled gameplay objects reduce rendering cost. Runtime post-processing resources are retained explicitly.
 
@@ -48,7 +50,7 @@ These observations meet the requested targets in this scenario. They do not guar
 ## Remaining playtest and presentation limits
 - A normal 10–15 minute run has not been played end to end to establish difficulty, duration, or fun. The full-run test accelerates spawning and directly damages enemies.
 - A physical Xbox controller has not been tested; controller tests inject a virtual Input System gamepad.
-- 21:9 anchors and height-based UI scaling are implemented. The workstation clamped a requested 2560×1080 window to 1920×1080, so native ultrawide rendering remains unverified.
+- 21:9 rendering is verified offscreen. This workstation has no physical ultrawide display for native monitor testing.
 - Character animation, synthesized audio and the short adaptive music loop are prototype assets. Enemy death uses a burst and immediate pool return. See the README TODOs.
 
 ## Environment differences

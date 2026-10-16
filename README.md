@@ -40,7 +40,7 @@ The helper script currently points to the editor installed on this workstation. 
 
 The arena uses URP Forward rendering with a single mixed directional light. Additional lights, light cookies and terrain/vegetation shader variants are disabled. Re-enable the relevant pipeline settings and update `ArenaShaderStripping.cs` before adding those features.
 
-Commit `.gitignore`, `Assets` and their `.meta` files, `Packages`, `ProjectSettings`, `Tools`, and `Docs`. Unity caches, local editor state, logs, and generated `Builds` are ignored. Distribute the entire `Builds/Windows` folder to players.
+Commit `.gitignore`, `Assets` and their `.meta` files, `Packages`, `ProjectSettings`, `Tools`, and `Docs`. Unity caches, local editor state, logs, and generated `Builds` are ignored. Distribute the packaged ZIP described above.
 
 ## Extend
 
@@ -59,7 +59,9 @@ Validation evidence and limitations are recorded in `Docs/VALIDATION.md`. `Docs/
 
 Reproduce the editor progression check with `Tools/unity.ps1 -Method NeonSiege.Editor.RunValidation.FullRun -Log full-run.log -Play`. Launch the executable with `-siegeQA` for combat/input/save/asset checks, or `-siegePerf` for a 1080p, 24-enemy performance sample. These modes quit automatically and write reports beside the executable. Performance mode uses an invulnerable stationary operator and uncapped rendering; it is not a full-run benchmark.
 
-`Tools/verify-player.ps1 -Mode QA -Show` runs the visible standalone checks and copies their report into `Docs`. Use `-Mode Perf` for the benchmark. The final recorded sample averaged 391.8 FPS, with 299 peak draw calls and 86,018 triangles; see the validation record for test conditions and limits.
+`Tools/verify-player.ps1 -Mode QA -Show` runs the visible standalone checks and copies their report into `Docs`. Use `-Mode Perf` for the stress benchmark, `-Mode Run` for a normal-speed virtual-controller playtest, or `-Mode Layout` for actual 1920×1080 and 2560×1080 render-target checks. Run these separately so they do not compete for GPU time. Run mode preserves health, damage, wave settings and game time, uses normal input actions, and restores the saved profile when it finishes. Its scene-aware automated aiming is not a human difficulty assessment.
+
+`Tools/unity.ps1 -Method NeonSiege.Editor.NavigationValidation.Rebuild -Log navigation.log` rebuilds navigation while retaining the lighting bake, verifies that cover/pillars exclude ground navigation, and checks perimeter paths. Solid cover uses explicit unwalkable modifier volumes extending below the floor. Spawn positions must have collision clearance and a complete path to the arena center.
 
 ## Art and playtest TODOs
 
