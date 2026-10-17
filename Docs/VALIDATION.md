@@ -14,11 +14,13 @@ This file records actual checks, not assumed completion.
 | 10–15 minute run | 610.8 seconds of gameplay; 645.7 seconds including upgrade selection (10:46). |
 | Holds 60 FPS on target hardware | Full-run sample on RTX 3050 Laptop: 143.8 FPS average at a 144 cap, 6.98 ms p95; 2 of 88,643 sampled frames exceeded 16.67 ms. |
 | No console errors | Full-run runtime errors: 0; standalone logs scanned for exceptions, warnings and unsupported shaders. |
-| Windows x86-64 build | Successful DirectX 11 / Mono standalone build. |
+| Windows x86-64 build | Successful DirectX 11 / Mono standalone build; PE machine 0x8664 verified. The ZIP was extracted, all 117 runtime files matched the build, and the extracted executable passed all 30 checks. |
 | README | Controls, extension points, build and validation commands included. |
 | Playable and fun | Actual combat/progression verified. Subjective enjoyment and human difficulty remain a human acceptance check. |
 
 The objective technical checks pass. A scene-aware virtual controller cannot establish whether a human finds the game fun. This audit does not mark that subjective criterion as verified.
+
+Release archive: `Builds/NeonSiege-Windows.zip` (34,481,869 bytes). SHA256: `C942FAEB40F64D7EB18F5A1EBEE6ED03C5AB33E40C00FCF4FAB1555D7AB93190`. See `package-validation.txt` and reproduce with `Tools/verify-package.ps1`.
 
 ## M1 — foundation
 - URP template imported successfully.
@@ -82,7 +84,7 @@ The final fixture confirms `PERFORMANCE_FIXTURE_ALIVE=24` before sampling. It ex
 - A physical Xbox controller has not been tested; controller tests inject a virtual Input System gamepad.
 - 21:9 rendering is verified offscreen. This workstation has no physical ultrawide display for native monitor testing.
 - Character animation, synthesized audio and the short adaptive music loop are prototype assets. Enemy death uses a burst and immediate pool return. See the README TODOs.
-- Computer Use inspected the game in earlier checks. During the final pass, native window activation failed twice with "failed to activate captured window"; final visual evidence therefore comes from the game's own rendered captures.
+- Computer Use inspected the normal executable's main menu, clicked Settings, verified its layout, and returned through Save & Back on the final pass. The game was left at its main menu. A previous pass encountered two native activation failures; the later launch and interaction succeeded. Full-run and ultrawide evidence also includes the game's rendered captures.
 
 ## Environment differences
 - No Unity or Blender MCP tool is exposed. Installed applications are driven through command-line scripts; Computer Use is available for visual checks.
